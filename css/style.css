@@ -460,9 +460,7 @@ nav > ul > li a {
   gap: 16px;
   border-radius: 8px;
   position: absolute;
-  /* bottom: -75px; */
-  bottom: calc(-175px/2);
-  /* left: 40px; */
+  bottom: calc(-95px / 2);
   left: 30px;
   right: 30px;
 }
@@ -592,6 +590,17 @@ li > a > img {
     background: rgba(225, 255, 225, 0.5);
     padding: 10px;
     backdrop-filter: blur(10px);
+    animation: dropdown 500ms 1 linear forwards;
+  }
+  @keyframes dropdown {
+    from {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
   }
   #icon:checked ~ nav,
   #icon:checked ~ .btn {
@@ -684,15 +693,9 @@ li > a > img {
     flex-wrap: wrap;
     gap: 90px;
   }
-  .position-img {
-    /* position: relative; */
-  }
   .position-box {
     max-width: 200px;
     min-height: 115px;
-    /* position: absolute;
-    bottom: -75px;
-    left: 30px; */
     padding: 10px;
   }
   .position-img {
@@ -943,18 +946,11 @@ li > a > img {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 90px;
-  }
-  .position-img {
-    /* position: relative; */
+    gap: 60px;
   }
   .position-box {
     max-width: 180px;
     min-height: 95px;
-    /* position: absolute;
-    bottom: -75px ;
-    left: 30px;
-    padding: 10px; */
   }
   .position-img {
     max-width: 245px;
@@ -975,6 +971,9 @@ li > a > img {
   }
   .footer-btn > a {
     font-size: 12px;
+  }
+  .footer-heading-section > div > div {
+    padding: 10px 0;
   }
 
   /* Footer Section */
