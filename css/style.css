@@ -460,8 +460,11 @@ nav > ul > li a {
   gap: 16px;
   border-radius: 8px;
   position: absolute;
-  bottom: -75px;
-  left: 40px;
+  /* bottom: -75px; */
+  bottom: calc(-175px/2);
+  /* left: 40px; */
+  left: 30px;
+  right: 30px;
 }
 .position-text > p {
   max-width: 285px;
@@ -682,14 +685,14 @@ li > a > img {
     gap: 90px;
   }
   .position-img {
-    position: relative;
+    /* position: relative; */
   }
   .position-box {
     max-width: 200px;
     min-height: 115px;
-    position: absolute;
+    /* position: absolute;
     bottom: -75px;
-    left: 30px;
+    left: 30px; */
     padding: 10px;
   }
   .position-img {
@@ -943,15 +946,15 @@ li > a > img {
     gap: 90px;
   }
   .position-img {
-    position: relative;
+    /* position: relative; */
   }
   .position-box {
     max-width: 180px;
     min-height: 95px;
-    position: absolute;
-    bottom: -75px;
+    /* position: absolute;
+    bottom: -75px ;
     left: 30px;
-    padding: 10px;
+    padding: 10px; */
   }
   .position-img {
     max-width: 245px;
