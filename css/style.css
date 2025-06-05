@@ -4,6 +4,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 /* Common Class */
 body {
@@ -709,7 +713,6 @@ li > a > img {
     gap: 75px;
   }
 }
-
 @media screen and (max-width: 768px) {
   /* Footer Section */
   .footer-section {
@@ -725,7 +728,6 @@ li > a > img {
     flex-wrap: wrap;
   }
 }
-
 @media screen and (max-width: 425px) {
   /* Common Class */
   .heading {
