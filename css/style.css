@@ -979,6 +979,9 @@ li > a > img {
   }
 
   /* Footer Section */
+  .footer-section > div > div {
+    gap: 20px;
+  }
   .footer-section {
     background: #263238;
     padding: 20px 0;
