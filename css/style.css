@@ -12,6 +12,8 @@ body {
 /* Common Class */
 body {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 :root {
   --primary-color: #4d4d4d;
@@ -307,6 +309,7 @@ nav > ul > li a {
   font-weight: lighter;
   color: var(--secondary-color);
 }
+
 /* Design Section */
 .design-section {
   margin-bottom: 45px;
@@ -503,6 +506,7 @@ nav > ul > li a {
 .footer-btn > a {
   color: var(--btn-color);
 }
+
 /* Footer Section */
 .footer-section {
   background: #263238;
@@ -510,7 +514,6 @@ nav > ul > li a {
 }
 .footer-section > div > div {
   justify-content: space-between;
-  align-items: center;
   gap: 100px;
 }
 .footer-logo {
@@ -599,7 +602,7 @@ li > a > img {
   }
   @keyframes dropdown {
     from {
-      transform: translateY(-300px);
+      transform: translateY(-30px);
       opacity: 0;
     }
     to {
@@ -707,11 +710,10 @@ li > a > img {
     max-width: 265px;
     min-height: 185px;
   }
+
   /* Footer Section */
   .footer-section > div > div {
-    justify-content: space-between;
-    align-items: center;
-    gap: 75px;
+    gap: 55px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -721,9 +723,7 @@ li > a > img {
     padding: 50px 0;
   }
   .footer-section > div > div {
-    justify-content: space-between;
-    align-items: center;
-    gap: 55px;
+    gap: 40px;
   }
   .footer-list {
     flex-wrap: wrap;
@@ -740,23 +740,24 @@ li > a > img {
   p {
     font-size: 12px;
   }
+
   /* Header Section */
   header {
     padding: 20px 0;
   }
   .dash {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .nav-logo > a > img {
-    max-width: 100px;
-    min-height: 14px;
+    max-width: 150px;
+    min-height: 30px;
     object-fit: contain;
   }
   nav > ul > li a {
-    font-size: 10px;
+    font-size: 12px;
   }
   .btn > a {
-    font-size: 10px;
+    font-size: 12px;
   }
   nav > ul {
     gap: 20px;
@@ -852,6 +853,7 @@ li > a > img {
     color: var(--btn-color);
     font-size: 12px;
   }
+
   /* Helping Section */
   .helping-text {
     text-align: center;
@@ -941,6 +943,7 @@ li > a > img {
     text-wrap: nowrap;
     align-items: center;
   }
+
   /* Position Section */
   .position-section {
     margin-bottom: 60px;
@@ -981,7 +984,8 @@ li > a > img {
 
   /* Footer Section */
   .footer-section > div > div {
-    gap: 20px;
+    gap: 10px;
+    flex-direction: column;
   }
   .footer-section {
     background: #263238;
@@ -1028,6 +1032,7 @@ li > a > img {
     justify-content: center;
   }
   .telegram {
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
